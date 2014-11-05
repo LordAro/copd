@@ -1,9 +1,3 @@
-#-------------------------------------------------
-#
-# Project created by QtCreator 2014-11-05T01:17:34
-#
-#-------------------------------------------------
-
 QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -11,10 +5,11 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = copd
 TEMPLATE = app
 
+DESTDIR     = bin
+OBJECTS_DIR = obj
+MOC_DIR     = src/gen
+UI_DIR      = src/gen
 
-SOURCES += main.cpp\
-        copdwindow.cpp
-
-HEADERS  += copdwindow.h
-
-FORMS    += copdwindow.ui
+SOURCES += $$files(src/*.cpp)
+HEADERS += $$files(src/*.h)
+FORMS   += $$files(forms/*.ui)
