@@ -9,16 +9,18 @@ namespace Ui {
 class COPDWindow;
 }
 
-class COPDWindow : public QMainWindow
-{
-    Q_OBJECT
+class COPDWindow : public QMainWindow {
+	Q_OBJECT
 
 public:
-    explicit COPDWindow(QWidget *parent = 0);
-    ~COPDWindow();
+	explicit COPDWindow(QWidget *parent = 0);
+	~COPDWindow();
+
+private slots:
+	void on_actionExit_triggered();
 
 private:
-    Ui::COPDWindow ui;
+	Ui::COPDWindow ui;
 };
 
 #endif // COPDWINDOW_H

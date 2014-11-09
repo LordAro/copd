@@ -13,3 +13,5 @@ UI_DIR      = src/gen
 SOURCES += $$files(src/*.cpp)
 HEADERS += $$files(src/*.h)
 FORMS   += $$files(forms/*.ui)
+
+CONFIG += c++11
